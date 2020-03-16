@@ -1,9 +1,14 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+
+<p align="center">
+    <img src="./images/form.gif" style="width: 600px;" >
+</p>
+
 ## Fancy Form
 
-Welcome to Fancy Form(Beta)
-Here It's Fancy Form It's take your site to next level
+- Welcome to Fancy Form(Beta)
+- Here It's Fancy Form It's take your site to next level with amazing animation of our Fancy Form
 
 ## Resources
 Built with HTML,CSS and JS
