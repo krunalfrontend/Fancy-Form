@@ -1,0 +1,55 @@
+/*
+* ------------------------------------------------------------------------------ *
+* Version : 1.0.0
+* Author  : Shivang Pokar 
+*/
+@charset "utf-8";
+html, body, br, hr, div, span, a, object, iframe, ul, ol, dl, li, dt, dd, h1, h2, h3, h4, h5, h6, p, blockquote, q, address,
+small, big, cite, dfn, ins, del, i, em, b, strong, sup, sub, strike, pre, code, samp, kbd, var, tt, form, fieldset, legend, label,input, textarea, option, .nobox {background: transparent; border: 0; font-size: 100%; margin: 0; outline: 0; padding: 0; vertical-align: baseline; font-family: 'Roboto', sans-serif;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {display: block;}
+blockquote, q {quotes: none;}
+br {height: 0;}
+ul, ol, dl, li {margin:0; padding:0;  color: #555555; font-size: 14px; line-height: 24px;}
+html, body{height: 100%; -webkit-appearance:none; border:none; -webkit-text-size-adjust:none;}
+body{position:relative;}
+.clear {clear:both; display:block; overflow:hidden; visibility:hidden; width:0; height:0;}
+.cf:after,.cf:before{display: table;content: ''}
+.cf:after{clear: both;}
+*{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+.mac * {-webkit-font-smoothing: antialiased;}
+a {color: #000000; font-size: 16px; text-decoration:none;}
+::-webkit-input-placeholder{ color: #000; opacity: 0; transition: 0.2s ease all 0.3s}
+:-moz-placeholder{ color: #000; opacity: 0; transition: 0.2s ease all 0.3s}
+::-moz-placeholder{ color: #000; opacity: 0;  transition: 0.2s ease all 0.3s}
+:-ms-input-placeholder{ color: #000; opacity: 0; transition: 0.2s ease all 0.3s}
+::-ms-input-placeholder{ color: #000; opacity: 0; transition: 0.2s ease all 0.3s}
+:placeholder-shown{ color: #000; opacity: 0; transition: 0.2s ease all 0.3s}
+.show ::-webkit-input-placeholder{opacity: 1;}
+.show :-moz-placeholder{opacity: 1;}
+.show ::-moz-placeholder{opacity: 1;}
+.show :-ms-input-placeholder{opacity: 1;}
+.show ::-ms-input-placeholder{opacity: 1;}
+.show :placeholder-shown{opacity: 1;}
+.form-system{background: #25a3ff; width: 100%; height: 100vh; display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;display: flex; justify-content: center; align-items: center; position: relative; z-index: 9; overflow: hidden}
+.form-system .process_bar{position: absolute; left: 0; top: 0; width: 0; height: 100%; z-index: -1; background: #0469ec; display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;display: flex; justify-content: center; align-items: center; transition: 0.5s ease all;}
+.form-system .process_bar p {color: #fff; font-size: 50px; opacity: 0; visibility: hidden;}
+.form-system .process_bar.show p{opacity: 1; visibility: visible;}
+.form-system .inner_part{ width: 200px; height: 75px; transition: 0.2s ease all 0.3s; position: relative; background: #fff; box-shadow: 2px 3px 20px 1px rgba(0, 0, 0, 0.37); z-index: 9;}
+.form-system .inner_part.no-transition{transition: none}
+.form-system .inner_part.long{width: 500px; animation:move 0.15s;}
+.form-system .inner_part .section {vertical-align: middle; line-height: 75px; text-align: center; font-size: 24px; font-weight: 600; cursor: pointer; transition: 0.2s ease all 0.2s; }
+.form-system .inner_part.long .section{opacity: 0; visibility: hidden;}
+.form-system .inner_part .section img{width: 16px; vertical-align: middle; margin-left: 10px; margin-top: -6px;}
+.form-system .inner_part .section-1{opacity: 0; visibility: hidden; position: absolute; width: 100%; height: 100%; top: 0; left: 0; display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;display: flex; padding: 10px 10px 10px 20px; align-items: center; background: #fff;}
+.form-system .inner_part input{width: 00%; border: 0; border-bottom: 2px solid #25a3ff; transition: 0.3s ease all; height: 50px; font-size: 20px;}
+.form-system .inner_part .section-1.show{opacity: 1; visibility: visible;}
+.form-system .inner_part .section-1 .input_section{width: 90%;}
+.form-system .inner_part .section-1 .next-btn{width: 20%; text-align: center; height: 50px; display: flex; align-items: center; justify-content: center;}
+.form-system .inner_part .section-1 .next-btn img{width: 100%; width: 30px;}
+.form-system .inner_part .section-1.show input{width: 100%;}
+.form-system .inner_part.animate{animation:move1 0.15s;}
+@keyframes move {0,100% {transform: translateY(0);}50% {transform: translateY(12px);}}
+@keyframes move1 {0,100% {transform: translateY(0);}50% {transform: translateY(12px);}}
+.error { animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both; transform: translate3d(0, 0, 0); backface-visibility: hidden; perspective: 1000px; }
+@keyframes shake {10%, 90% {transform: translate3d(-1px, 0, 0);}20%, 80% {transform: translate3d(2px, 0, 0);}30%, 50%, 70% {transform: translate3d(-4px, 0, 0);}40%, 60% {transform: translate3d(4px, 0, 0);}}
+.form-system .inner_part .form_data .section-1.error input{border-color: #f44336}
