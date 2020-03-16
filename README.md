@@ -2,7 +2,7 @@
 
 
 <p align="center">
-    <img src="./images/form.gif" style="width: 600px;" >
+    <img src="./images/form.gif" style="width: 100%" >
 </p>
 
 ## Fancy Form
